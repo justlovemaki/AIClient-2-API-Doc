@@ -1,0 +1,235 @@
+/**
+ * Customize default theme styling by overriding CSS variables:
+ * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
+ */
+
+/**
+ * Component: Home
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(120deg,
+      #26d3fe,
+      #fdc15f);
+
+  --vp-home-hero-image-background-image: linear-gradient(155deg,
+      #26d3fe 50%,
+      #fdc15f 50%);
+  --vp-home-hero-image-filter: blur(80px);
+
+  /* 主要品牌色 */
+  --vp-c-brand-1: #0eafff;
+  /* 主要品牌色 */
+  --vp-c-brand-2: #d7b47b;
+  /* 次要品牌色 */
+  --vp-c-brand-3: #04c79f;
+  /* 第三级品牌色 */
+  --vp-c-brand-soft: rgba(0, 206, 149, 0.25);
+  /* 柔和背景色 */
+
+  /* 悬停状态色（稍微加深） */
+  --vp-c-brand-1-hover: #00b885;
+  --vp-c-brand-2-hover: #2da5c8;
+  --vp-c-brand-3-hover: #03b38f;
+
+  /* 激活/按下状态色（进一步加深） */
+  --vp-c-brand-1-active: #00a375;
+  --vp-c-brand-2-active: #2692b2;
+  --vp-c-brand-3-active: #029e7f;
+
+  /* 辅助色调 */
+  --vp-c-brand-light: rgba(0, 206, 149, 0.1);
+  --vp-c-brand-lighter: rgba(0, 206, 149, 0.05);
+  --vp-c-brand-dark: #008f69;
+  --vp-c-brand-darker: #007a5a;
+}
+
+/* 暗色模式下的主题色调整 */
+.dark {
+  --vp-c-brand-1: #26a8e9;
+  /* 暗色模式下稍微提亮 */
+  --vp-c-brand-2: #e8c792;
+  /* 暗色模式下稍微提亮 */
+  --vp-c-brand-3: #06d9ab;
+  /* 暗色模式下稍微提亮 */
+  --vp-c-brand-soft: rgba(0, 230, 163, 0.16);
+
+  /* 暗色模式悬停状态 */
+  --vp-c-brand-1-hover: #00d193;
+  --vp-c-brand-2-hover: #38b1da;
+  --vp-c-brand-3-hover: #05c49b;
+
+  /* 暗色模式激活状态 */
+  --vp-c-brand-1-active: #00bc83;
+  --vp-c-brand-2-active: #2e9eca;
+  --vp-c-brand-3-active: #04af8b;
+}
+
+.custom-block.tip > p code,
+.custom-block.tip > ul code,
+.custom-block.tip > ol code,
+.custom-block.tip > div:not([class*='language-']) code {
+  background-color: var(--vp-code-bg) !important;
+}
+
+.image-container .VPImage.image-src[alt="weclone-hero-image"] {
+  zoom: 1.5;
+}
+
+/* 自定义组件样式增强 */
+/* 导航栏品牌色 */
+.VPNavBar .brand .VPImage {
+  filter: hue-rotate(160deg) saturate(1.2);
+}
+
+/* 侧边栏激活项 */
+.VPSidebarItem.is-active>.item .text {
+  color: var(--vp-c-brand-1);
+}
+
+/* 代码块高亮色 */
+.vp-code-group .tabs label {
+  color: var(--vp-c-text-2);
+}
+
+.vp-code-group .tabs label.active {
+  color: var(--vp-c-brand-1);
+  border-bottom-color: var(--vp-c-brand-1);
+}
+
+/* 按钮渐变效果 */
+.VPButton.brand {
+  background: linear-gradient(125deg, var(--vp-c-brand-1) 25%, var(--vp-c-brand-2) 75%);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.VPButton.brand:hover {
+  background: linear-gradient(135deg, var(--vp-c-brand-1-hover) 0%, var(--vp-c-brand-2-hover) 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 206, 149, 0.3);
+}
+
+/* 链接悬停效果 */
+.vp-doc a {
+  color: var(--vp-c-brand-1);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom-color 0.25s;
+}
+
+.vp-doc a:hover {
+  border-bottom-color: var(--vp-c-brand-1);
+}
+
+/* 提示框自定义色彩 */
+/* .custom-block.tip {
+  border-color: var(--vp-c-brand-1);
+}
+
+.custom-block.tip .custom-block-title {
+  color: var(--vp-c-brand-1);
+} */
+
+/* 搜索框焦点色 */
+.DocSearch-Button:focus,
+.DocSearch-Button:hover {
+  background: var(--vp-c-brand-soft);
+  box-shadow: inset 0 0 0 1px var(--vp-c-brand-1);
+}
+
+/* 滚动条自定义（webkit浏览器） */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--vp-c-brand-1) 0%, var(--vp-c-brand-3) 100%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, var(--vp-c-brand-1-hover) 0%, var(--vp-c-brand-3-hover) 100%);
+}
+
+/* 页面加载进度条 */
+.nprogress .bar {
+  background: linear-gradient(90deg, var(--vp-c-brand-1) 0%, var(--vp-c-brand-2) 100%) !important;
+  height: 3px !important;
+}
+
+.nprogress .peg {
+  box-shadow: 0 0 10px var(--vp-c-brand-1), 0 0 5px var(--vp-c-brand-1) !important;
+}
+
+@media (min-width: 640px) {
+  :root {
+    --vp-home-hero-image-filter: blur(112px);
+  }
+}
+
+@media (min-width: 960px) {
+  :root {
+    --vp-home-hero-image-filter: blur(136px);
+  }
+}
+
+.image-container .VPImage.image-src[alt="weclone-hero-image"] {
+  width: 100% !important;
+  max-width: 800px !important;
+  height: auto !important;
+  object-fit: contain;
+  /* 保持比例缩放 */
+}
+
+/* 减小 h1 后的 h2 的margin-top */
+.vp-doc h1+h2 {
+  margin-top: 16px !important;
+  border-top: none;
+  padding-top: 8px;
+}
+
+/* 保持其他 h2 的原始样式 */
+.vp-doc h2:not(h1 + h2) {
+  margin-top: 48px;
+  border-top: 1px solid var(--vp-c-divider);
+  padding-top: 24px;
+}
+
+
+/* .wide-page 宽版面样式 - 用于特定页面 */
+.wide-page .VPDoc.has-aside .content {
+  max-width: 1200px !important;
+  /* 默认 688px，增加宽度 */
+}
+
+.wide-page .VPDoc.has-aside .content-container {
+  min-width: 1000px !important;
+  /* 默认 688px，增加宽度 */
+}
+
+.wide-page .VPContent.has-sidebar {
+  padding-right: 0 !important;
+}
+
+@media (min-width: 960px) {
+  .wide-page .VPDoc:not(.has-sidebar) .content {
+    max-width: 1100px !important;
+    /* 默认 752px */
+  }
+
+  .wide-page .VPDoc:not(.has-sidebar) .container {
+    max-width: 1300px !important;
+    /* 默认 992px */
+  }
+
+}
+
+@media (min-width: 1440px) {
+  .wide-page .VPDoc:not(.has-sidebar) .content {
+    max-width: 1200px !important;
+    /* 默认 784px */
+  }
+
+  .wide-page .VPDoc:not(.has-sidebar) .container {
+    max-width: 1500px !important;
+    /* 默认 1104px */
+  }
+}

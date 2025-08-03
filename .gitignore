@@ -1,0 +1,9 @@
+__pycache__/
+venv/
+.DS_Store
+node_modules/
+.idea
+*/cache/*
+*/.cache/*
+docs/.vitepress/cache/*
+docs/.vitepress/dist/*
