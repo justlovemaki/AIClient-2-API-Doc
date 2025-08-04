@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "AIClient-2-API"
-  text: "为LLM项目提供统一API服务"
+  text: "模拟AI客户端请求并提供统一API服务"
   tagline: LLM/API代理/模块化/可扩展
   image:
     src: /img/logo_plain.png

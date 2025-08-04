@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "AIClient-2-API"
-  text: "Unified API service for LLM projects"
+  text: "Simulate AI client requests and provide unified API services"
   tagline: LLM/API Proxy/Modularity/Extensibility
   image:
     src: /img/logo_plain.png
