@@ -19,28 +19,37 @@ export default defineConfig({
             text: 'Core Concepts',
             collapsed: false,
             items: [
-                { text: 'Project Architecture Overview', link: '/en/docs/core-concepts/' },
+                { text: 'Architecture Overview', link: '/en/docs/core-concepts/architecture' },
+                { text: 'Workflow Overview', link: '/en/docs/core-concepts/workflow' },
             ]
           },
           {
             text: 'API Usage',
             collapsed: false,
             items: [
-                { text: 'API Interface Documentation', link: '/en/docs/api-usage/' },
+                { text: 'Starting the API Service', link: '/en/docs/api-usage/startup' },
+                { text: 'Authentication', link: '/en/docs/api-usage/authentication' },
+                { text: 'Health Check', link: '/en/docs/api-usage/health-check' },
+                { text: 'Model Listing', link: '/en/docs/api-usage/models' },
+                { text: 'Content Generation', link: '/en/docs/api-usage/content-generation' },
+                { text: 'Model Provider Selection and Override', link: '/en/docs/api-usage/provider-selection' },
+                { text: 'System Prompt Management', link: '/en/docs/api-usage/system-prompt' },
+                { text: 'Logging Configuration', link: '/en/docs/api-usage/logging' },
             ]
           },
           {
             text: 'Advanced Configuration',
             collapsed: false,
             items: [
-                { text: 'Configuration Parameters Details', link: '/en/docs/advanced-config/' },
+                { text: 'API Service Related Configuration', link: '/en/docs/advanced-config/api-service-config' },
             ]
           },
           {
             text: 'Development and Extension',
             collapsed: false,
             items: [
-                { text: 'Integrate New LLM', link: '/en/docs/development/' },
+                { text: 'Core Extension Points', link: '/en/docs/development/extension-points' },
+                { text: 'Steps to Add a New LLM', link: '/en/docs/development/add-new-llm' },
             ]
           }
         ],
@@ -73,28 +82,37 @@ export default defineConfig({
             text: '核心概念',
             collapsed: false,
             items: [
-                { text: '项目架构概览', link: '/zh/docs/core-concepts/' },
+                { text: '项目架构概览', link: '/zh/docs/core-concepts/architecture' },
+                { text: '工作流概览', link: '/zh/docs/core-concepts/workflow' },
             ]
           },
           {
             text: 'API 使用',
             collapsed: false,
             items: [
-                { text: 'API 接口说明', link: '/zh/docs/api-usage/' },
+                { text: '启动 API 服务', link: '/zh/docs/api-usage/startup' },
+                { text: '认证', link: '/zh/docs/api-usage/authentication' },
+                { text: '健康检查', link: '/zh/docs/api-usage/health-check' },
+                { text: '模型列表', link: '/zh/docs/api-usage/models' },
+                { text: '内容生成', link: '/zh/docs/api-usage/content-generation' },
+                { text: '模型提供商的选择与覆盖', link: '/zh/docs/api-usage/provider-selection' },
+                { text: '系统提示词管理', link: '/zh/docs/api-usage/system-prompt' },
+                { text: '日志配置', link: '/zh/docs/api-usage/logging' },
             ]
           },
           {
             text: '高级配置',
             collapsed: false,
             items: [
-                { text: '配置参数详解', link: '/zh/docs/advanced-config/' },
+                { text: 'API 服务相关配置', link: '/zh/docs/advanced-config/api-service-config' },
             ]
           },
           {
             text: '开发与扩展',
             collapsed: false,
             items: [
-                { text: '集成新 LLM', link: '/zh/docs/development/' },
+                { text: '核心扩展点', link: '/zh/docs/development/extension-points' },
+                { text: '添加新的 LLM 步骤', link: '/zh/docs/development/add-new-llm' },
             ]
           }
         ],
