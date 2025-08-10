@@ -16,19 +16,19 @@ export default defineConfig({
         ],
         sidebar: [
           {
-            text: 'Installation Guide',
-            collapsed: false,
-            items: [
-                { text: 'Installation', link: '/en/docs/installation/' },
-                { text: 'Docker Deployment', link: '/en/docs/installation/docker-deployment' },
-            ]
-          },
-          {
             text: 'Core Concepts',
             collapsed: false,
             items: [
                 { text: 'Architecture Overview', link: '/en/docs/core-concepts/architecture' },
                 { text: 'Workflow Overview', link: '/en/docs/core-concepts/workflow' },
+            ]
+          },
+          {
+            text: 'Installation Guide',
+            collapsed: false,
+            items: [
+                { text: 'Installation', link: '/en/docs/installation/' },
+                { text: 'Docker Deployment', link: '/en/docs/installation/docker-deployment' },
             ]
           },
           {
@@ -87,19 +87,19 @@ export default defineConfig({
         },
         sidebar: [
           {
-            text: '安装指南',
-            collapsed: false,
-            items: [
-                { text: '安装', link: '/zh/docs/installation/' },
-                { text: 'Docker 部署', link: '/zh/docs/installation/docker-deployment' },
-            ]
-          },
-          {
             text: '核心概念',
             collapsed: false,
             items: [
                 { text: '项目架构概览', link: '/zh/docs/core-concepts/architecture' },
                 { text: '工作流概览', link: '/zh/docs/core-concepts/workflow' },
+            ]
+          },
+          {
+            text: '安装指南',
+            collapsed: false,
+            items: [
+                { text: '安装', link: '/zh/docs/installation/' },
+                { text: 'Docker 部署', link: '/zh/docs/installation/docker-deployment' },
             ]
           },
           {
