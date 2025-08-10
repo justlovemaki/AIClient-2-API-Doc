@@ -10,9 +10,6 @@ hero:
     src: /img/logo_plain.png
     alt: "AIClient-2-API-hero-image"
   actions:
-    - theme: brand
-      text: 核心概念
-      link: /zh/docs/core-concepts/index
     - theme: alt
       text: 安装指南
       link: /zh/docs/installation/index
@@ -30,10 +27,6 @@ hero:
       link: https://github.com/justlovemaki/AIClient-2-API
 
 features:
-  - icon: 💡
-    title: 核心概念
-    details: 了解AIClient-2-API的基本原理和核心功能，快速掌握构建AI应用的基础知识。
-
   - icon: 🔧
     title: 安装指南
     details: 了解如何安装和部署AIClient-2-API服务，包括环境准备和Docker部署选项。

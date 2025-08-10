@@ -10,9 +10,6 @@ hero:
     src: /img/logo_plain.png
     alt: "AIClient-2-API-hero-image"
   actions:
-    - theme: brand
-      text: Core Concepts
-      link: /en/docs/core-concepts/
     - theme: alt
       text: Installation Guide
       link: /en/docs/installation/
@@ -30,10 +27,6 @@ hero:
       link: https://github.com/justlovemaki/AIClient-2-API
 
 features:
-  - icon: 💡
-    title: Core Concepts
-    details: Understand the fundamental principles and core functionalities of AIClient-2-API, quickly grasping the basics for building AI applications.
-
   - icon: 🔧
     title: Installation Guide
     details: Learn how to install and deploy the AIClient-2-API service, including environment preparation and Docker deployment options.
