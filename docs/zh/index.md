@@ -10,7 +10,7 @@ hero:
     src: /img/logo_plain.png
     alt: "AIClient-2-API-hero-image"
   actions:
-    - theme: alt
+    - theme: brand
       text: 安装指南
       link: /zh/docs/installation/index
     - theme: alt
