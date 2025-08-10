@@ -16,6 +16,14 @@ export default defineConfig({
         ],
         sidebar: [
           {
+            text: 'Installation Guide',
+            collapsed: false,
+            items: [
+                { text: 'Installation', link: '/en/docs/installation/' },
+                { text: 'Docker Deployment', link: '/en/docs/installation/docker-deployment' },
+            ]
+          },
+          {
             text: 'Core Concepts',
             collapsed: false,
             items: [
@@ -78,6 +86,14 @@ export default defineConfig({
           label: '目录'
         },
         sidebar: [
+          {
+            text: '安装指南',
+            collapsed: false,
+            items: [
+                { text: '安装', link: '/zh/docs/installation/' },
+                { text: 'Docker 部署', link: '/zh/docs/installation/docker-deployment' },
+            ]
+          },
           {
             text: '核心概念',
             collapsed: false,

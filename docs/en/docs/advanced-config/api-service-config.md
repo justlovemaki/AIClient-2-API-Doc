@@ -23,6 +23,8 @@ While `api-server.js` prioritizes reading configurations from command-line argum
 | `PROMPT_LOG_MODE`          | Prompt log mode: `console`, `file`, or `none`. | `"none"` |
 | `REQUEST_MAX_RETRIES`      | Maximum number of retries for API requests upon failure. | `3` |
 | `REQUEST_BASE_DELAY`       | Base delay time (in milliseconds) for API request retries, which increases exponentially with each retry. | `1000` |
+| `CRON_NEAR_MINUTES`        | The number of minutes before token expiration to trigger a refresh. | `5` |
+| `CRON_REFRESH_TOKEN`       | Whether to enable automatic token refresh. | `true` |
 
 **Example `config.json` (can be placed in the project root directory):**
 
@@ -30,7 +32,7 @@ While `api-server.js` prioritizes reading configurations from command-line argum
 {
   "REQUIRED_API_KEY": "my_super_secret_key",
   "SERVER_PORT": 8005,
-  "HOST": "0.0.0.0",
+  "HOST": "127.0.0.1",
   "MODEL_PROVIDER": "gemini-cli-oauth",
   "GEMINI_OAUTH_CREDS_FILE_PATH": "/path/to/credentials.json",
   "PROJECT_ID": "your-gcp-project-id",
@@ -39,7 +41,9 @@ While `api-server.js` prioritizes reading configurations from command-line argum
   "PROMPT_LOG_MODE": "file",
   "PROMPT_LOG_BASE_NAME": "aiclient_2_api_logs",
   "REQUEST_MAX_RETRIES": 5,
-  "REQUEST_BASE_DELAY": 2000
+  "REQUEST_BASE_DELAY": 2000,
+  "CRON_NEAR_MINUTES": 5,
+  "CRON_REFRESH_TOKEN": true
 }
 ```
 

@@ -23,6 +23,8 @@
 | `PROMPT_LOG_MODE`          | 提示词日志模式：`console` (控制台)、`file` (文件) 或 `none` (不记录)。 | `"none"` |
 | `REQUEST_MAX_RETRIES`      | API 请求失败时的最大重试次数。 | `3` |
 | `REQUEST_BASE_DELAY`       | API 请求重试时的基础延迟时间（毫秒），每次重试时呈指数增长。 | `1000` |
+| `CRON_NEAR_MINUTES`        | 在令牌过期前触发刷新的分钟数。 | `5` |
+| `CRON_REFRESH_TOKEN`       | 是否启用自动令牌刷新。 | `true` |
 
 **示例 `config.json` (可以放置在项目根目录下):**
 
@@ -30,7 +32,7 @@
 {
   "REQUIRED_API_KEY": "my_super_secret_key",
   "SERVER_PORT": 8005,
-  "HOST": "0.0.0.0",
+  "HOST": "127.0.0.1",
   "MODEL_PROVIDER": "gemini-cli-oauth",
   "GEMINI_OAUTH_CREDS_FILE_PATH": "/path/to/credentials.json",
   "PROJECT_ID": "your-gcp-project-id",
@@ -39,7 +41,9 @@
   "PROMPT_LOG_MODE": "file",
   "PROMPT_LOG_BASE_NAME": "aiclient_2_api_logs",
   "REQUEST_MAX_RETRIES": 5,
-  "REQUEST_BASE_DELAY": 2000
+  "REQUEST_BASE_DELAY": 2000,
+  "CRON_NEAR_MINUTES": 5,
+  "CRON_REFRESH_TOKEN": true
 }
 ```
 

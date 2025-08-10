@@ -9,7 +9,7 @@ node src/api-server.js
 
 **Server Configuration:**
 ```bash
-node src/api-server.js --host 0.0.0.0 --port 8080 --api-key your-secret-key
+node src/api-server.js --host 127.0.0.1 --port 8080 --api-key your-secret-key
 ```
 
 **OpenAI Provider:**
@@ -56,7 +56,7 @@ node src/api-server.js --log-prompts file --prompt-log-base-name my-logs
 **Full Example:**
 ```bash
 node src/api-server.js \
-  --host 0.0.0.0 \
+  --host 127.0.0.1 \
   --port 3000 \
   --api-key my-secret-key \
   --model-provider gemini-cli \

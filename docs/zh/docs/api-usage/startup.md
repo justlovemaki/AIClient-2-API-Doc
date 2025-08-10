@@ -9,7 +9,7 @@ node src/api-server.js
 
 **服务器配置:**
 ```bash
-node src/api-server.js --host 0.0.0.0 --port 8080 --api-key your-secret-key
+node src/api-server.js --host 127.0.0.1 --port 8080 --api-key your-secret-key
 ```
 
 **OpenAI 提供商:**
@@ -56,7 +56,7 @@ node src/api-server.js --log-prompts file --prompt-log-base-name my-logs
 **完整示例:**
 ```bash
 node src/api-server.js \
-  --host 0.0.0.0 \
+  --host 127.0.0.1 \
   --port 3000 \
   --api-key my-secret-key \
   --model-provider gemini-cli \
