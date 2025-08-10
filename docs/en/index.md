@@ -14,6 +14,9 @@ hero:
       text: Core Concepts
       link: /en/docs/core-concepts/
     - theme: alt
+      text: Installation Guide
+      link: /en/docs/installation/
+    - theme: alt
       text: API Usage
       link: /en/docs/api-usage/
     - theme: alt
@@ -30,19 +33,19 @@ features:
   - icon: 💡
     title: Core Concepts
     details: Understand the fundamental principles and core functionalities of AIClient-2-API, quickly grasping the basics for building AI applications.
-    link: /en/docs/core-concepts/
+
+  - icon: 🔧
+    title: Installation Guide
+    details: Learn how to install and deploy the AIClient-2-API service, including environment preparation and Docker deployment options.
 
   - icon: 🛠️
     title: API Usage
     details: Detailed guide on how to interact with AIClient-2-API through its API interface, enabling custom integration and advanced applications.
-    link: /en/docs/api-usage/
 
   - icon: ⚙️
     title: Advanced Configuration
     details: Deep dive into the advanced configuration options of AIClient-2-API, helping you personalize settings and optimize based on specific requirements.
-    link: /en/docs/advanced-config/
 
   - icon: 💻
     title: Development Guide
     details: Provides developers with detailed guidance on setting up the AIClient-2-API development environment, contributing code, and extending functionalities.
-    link: /en/docs/development/

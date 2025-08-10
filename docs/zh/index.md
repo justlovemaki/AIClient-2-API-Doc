@@ -14,6 +14,9 @@ hero:
       text: 核心概念
       link: /zh/docs/core-concepts/index
     - theme: alt
+      text: 安装指南
+      link: /zh/docs/installation/index
+    - theme: alt
       text: API使用
       link: /zh/docs/api-usage/index
     - theme: alt
@@ -30,19 +33,19 @@ features:
   - icon: 💡
     title: 核心概念
     details: 了解AIClient-2-API的基本原理和核心功能，快速掌握构建AI应用的基础知识。
-    link: /zh/docs/core-concepts/index
+
+  - icon: 🔧
+    title: 安装指南
+    details: 了解如何安装和部署AIClient-2-API服务，包括环境准备和Docker部署选项。
 
   - icon: 🛠️
     title: API使用
     details: 详细介绍如何通过API接口与AIClient-2-API进行交互，实现自定义集成和高级应用。
-    link: /zh/docs/api-usage/index
 
   - icon: ⚙️
     title: 高级配置
     details: 深入探讨AIClient-2-API的高级配置选项，帮助您根据特定需求进行个性化设置和优化。
-    link: /zh/docs/advanced-config/index
 
   - icon: 💻
     title: 开发指南
     details: 为开发者提供AIClient-2-API的开发环境搭建、贡献代码和扩展功能的详细指南。
-    link: /zh/docs/development/index
