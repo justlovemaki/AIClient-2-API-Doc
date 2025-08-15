@@ -6,7 +6,7 @@ AIClient-2-API 允许你通过命令行参数 `--model-provider` 来指定后端
 node src/api-server.js --model-provider openai-custom
 node src/api-server.js --model-provider claude-custom
 node src/api-server.js --model-provider gemini-cli-oauth
-node src/api-server.js --model-provider kiro-api
+node src/api-server.js --model-provider claude-kiro-oauth
 ```
 
 ### 运行时覆盖

@@ -24,22 +24,22 @@ node src/api-server.js --model-provider claude-custom --claude-api-key sk-ant-xx
 
 **Gemini 提供商（使用 Base64 凭据的 OAuth）:**
 ```bash
-node src/api-server.js --model-provider gemini-cli --gemini-oauth-creds-base64 eyJ0eXBlIjoi... --project-id your-project-id
+node src/api-server.js --model-provider gemini-cli-oauth --gemini-oauth-creds-base64 eyJ0eXBlIjoi... --project-id your-project-id
 ```
 
 **Gemini 提供商（使用凭据文件的 OAuth）:**
 ```bash
-node src/api-server.js --model-provider gemini-cli --gemini-oauth-creds-file /path/to/credentials.json --project-id your-project-id
+node src/api-server.js --model-provider gemini-cli-oauth --gemini-oauth-creds-file /path/to/credentials.json --project-id your-project-id
 ```
 
 **Kiro 提供商 (使用 Base64 凭据):**
 ```bash
-node src/api-server.js --model-provider kiro-api --kiro-oauth-creds-base64 eyJ0eXBlIjoi...
+node src/api-server.js --model-provider claude-kiro-oauth --kiro-oauth-creds-base64 eyJ0eXBlIjoi...
 ```
 
 **Kiro 提供商 (使用凭据文件):**
 ```bash
-node src/api-server.js --model-provider kiro-api --kiro-oauth-creds-file /path/to/kiro_credentials.json
+node src/api-server.js --model-provider claude-kiro-oauth --kiro-oauth-creds-file /path/to/kiro_credentials.json
 ```
 
 **系统提示管理:**
@@ -59,7 +59,7 @@ node src/api-server.js \
   --host 127.0.0.1 \
   --port 3000 \
   --api-key my-secret-key \
-  --model-provider gemini-cli \
+  --model-provider gemini-cli-oauth \
   --project-id my-gcp-project \
   --gemini-oauth-creds-file ./credentials.json \
   --system-prompt-file ./custom-system-prompt.txt \

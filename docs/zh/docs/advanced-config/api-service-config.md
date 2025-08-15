@@ -7,15 +7,15 @@
 | `REQUIRED_API_KEY`         | 客户端访问 API 所需的密钥。 | `"123456"` |
 | `SERVER_PORT`              | API 服务监听的端口。 | `3000` |
 | `HOST`                     | API 服务监听的地址。 | `"localhost"` |
-| `MODEL_PROVIDER`           | AI 模型提供商。可选值包括：<br> - `gemini-cli-oauth`: 使用 Google Gemini CLI 认证。 <br> - `openai-custom`: 使用 OpenAI 兼容 API。 <br> - `claude-custom`: 使用 Claude 兼容 API。<br> - `kiro-api`: 使用 Kiro/CodeWhisperer 访问 Claude。 | `"gemini-cli-oauth"` |
+| `MODEL_PROVIDER`           | AI 模型提供商。可选值包括：<br> - `gemini-cli-oauth`: 使用 Google Gemini CLI 认证。 <br> - `openai-custom`: 使用 OpenAI 兼容 API。 <br> - `claude-custom`: 使用 Claude 兼容 API。<br> - `claude-kiro-oauth`: 使用 Kiro/CodeWhisperer 访问 Claude。 | `"gemini-cli-oauth"` |
 | `OPENAI_API_KEY`           | 当 `MODEL_PROVIDER` 为 `openai-custom` 时，OpenAI API 的密钥。 | `null` |
 | `OPENAI_BASE_URL`          | 当 `MODEL_PROVIDER` 为 `openai-custom` 时，OpenAI API 的基础 URL。 | `null` |
 | `CLAUDE_API_KEY`           | 当 `MODEL_PROVIDER` 为 `claude-custom` 时，Claude API 的密钥。 | `null` |
 | `CLAUDE_BASE_URL`          | 当 `MODEL_PROVIDER` 为 `claude-custom` 时，Claude API 的基础 URL。 | `null` |
 | `GEMINI_OAUTH_CREDS_BASE64`| 当 `MODEL_PROVIDER` 为 `gemini-cli-oauth` 时，Gemini OAuth 凭据的 Base64 字符串。 | `null` |
 | `GEMINI_OAUTH_CREDS_FILE_PATH` | 当 `MODEL_PROVIDER` 为 `gemini-cli-oauth` 时，Gemini OAuth 凭据 JSON 文件的路径。 | `null` |
-| `KIRO_OAUTH_CREDS_BASE64`  | 当 `MODEL_PROVIDER` 为 `kiro-api` 时，Kiro OAuth 凭据的 Base64 字符串。 | `null` |
-| `KIRO_OAUTH_CREDS_FILE_PATH` | 当 `MODEL_PROVIDER` 为 `kiro-api` 时，Kiro OAuth 凭据 JSON 文件的路径。 | `null` |
+| `KIRO_OAUTH_CREDS_BASE64`  | 当 `MODEL_PROVIDER` 为 `claude-kiro-oauth` 时，Kiro OAuth 凭据的 Base64 字符串。 | `null` |
+| `KIRO_OAUTH_CREDS_FILE_PATH` | 当 `MODEL_PROVIDER` 为 `claude-kiro-oauth` 时，Kiro OAuth 凭据 JSON 文件的路径。 | `null` |
 | `PROJECT_ID`               | 当 `MODEL_PROVIDER` 为 `gemini-cli-oauth` 时，Google Cloud 项目 ID。 | `null` |
 | `SYSTEM_PROMPT_FILE_PATH`  | 包含系统提示词的文件路径。 | `"input_system_prompt.txt"` |
 | `SYSTEM_PROMPT_MODE`       | 系统提示词处理模式：`overwrite` (覆盖) 或 `append` (追加)。 | `"overwrite"` |
