@@ -41,6 +41,10 @@ node src/api-server.js --model-provider claude-kiro-oauth --kiro-oauth-creds-bas
 ```bash
 node src/api-server.js --model-provider claude-kiro-oauth --kiro-oauth-creds-file /path/to/kiro_credentials.json
 ```
+**Qwen Provider (using credentials file):**
+```bash
+node src/api-server.js --model-provider openai-qwen-oauth --qwen-oauth-creds-file /path/to/qwen_credentials.json
+```
 
 **System Prompt Management:**
 ```bash

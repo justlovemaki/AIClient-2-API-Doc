@@ -41,6 +41,10 @@ node src/api-server.js --model-provider claude-kiro-oauth --kiro-oauth-creds-bas
 ```bash
 node src/api-server.js --model-provider claude-kiro-oauth --kiro-oauth-creds-file /path/to/kiro_credentials.json
 ```
+**Qwen 提供商 (使用凭据文件):**
+```bash
+node src/api-server.js --model-provider openai-qwen-oauth --qwen-oauth-creds-file /path/to/qwen_credentials.json
+```
 
 **系统提示管理:**
 ```bash

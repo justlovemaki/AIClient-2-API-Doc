@@ -7,6 +7,7 @@ node src/api-server.js --model-provider openai-custom
 node src/api-server.js --model-provider claude-custom
 node src/api-server.js --model-provider gemini-cli-oauth
 node src/api-server.js --model-provider claude-kiro-oauth
+node src/api-server.js --model-provider openai-qwen-oauth
 ```
 
 ### Runtime Override
