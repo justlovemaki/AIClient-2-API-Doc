@@ -50,8 +50,9 @@ export default defineConfig({
             collapsed: false,
             items: [
                 { text: 'API Service Related Configuration', link: '/en/docs/advanced-config/api-service-config' },
-            ]
-          },
+                { text: 'Provider Pools Configuration', link: '/en/docs/advanced-config/provider-pools' },
+             ]
+           },
           {
             text: 'Development and Extension',
             collapsed: false,
@@ -121,8 +122,9 @@ export default defineConfig({
             collapsed: false,
             items: [
                 { text: 'API 服务相关配置', link: '/zh/docs/advanced-config/api-service-config' },
-            ]
-          },
+                { text: '提供商池配置', link: '/zh/docs/advanced-config/provider-pools' },
+             ]
+           },
           {
             text: '开发与扩展',
             collapsed: false,
