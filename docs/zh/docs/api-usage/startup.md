@@ -46,6 +46,11 @@ node src/api-server.js --model-provider claude-kiro-oauth --kiro-oauth-creds-fil
 node src/api-server.js --model-provider openai-qwen-oauth --qwen-oauth-creds-file /path/to/qwen_credentials.json
 ```
 
+**使用提供商池:**
+```bash
+node src/api-server.js --provider-pools-file provider_pools.json --model-provider openai-custom
+```
+
 **系统提示管理:**
 ```bash
 node src/api-server.js --system-prompt-file custom-prompt.txt --system-prompt-mode append

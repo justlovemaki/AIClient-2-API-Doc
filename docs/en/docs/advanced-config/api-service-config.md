@@ -7,7 +7,7 @@ While `api-server.js` prioritizes reading configurations from command-line argum
 | `REQUIRED_API_KEY`         | The key required for clients to access the API. | `"123456"` |
 | `SERVER_PORT`              | The port on which the API service listens. | `3000` |
 | `HOST`                     | The address on which the API service listens. | `"localhost"` |
-| `MODEL_PROVIDER`           | The AI model provider. Optional values include:<br> - `gemini-cli-oauth`: Uses Google Gemini CLI authentication. <br> - `openai-custom`: Uses OpenAI compatible API. <br> - `claude-custom`: Uses Claude compatible API.<br> - `claude-kiro-oauth`: Uses Kiro/CodeWhisperer to access Claude. | `"gemini-cli-oauth"` |
+| `MODEL_PROVIDER`           | The AI model provider. Optional values include:<br> - `gemini-cli-oauth`: Uses Google Gemini CLI authentication. <br> - `openai-custom`: Uses OpenAI compatible API. <br> - `claude-custom`: Uses Claude compatible API.<br> - `claude-kiro-oauth`: Uses Kiro/CodeWhisperer to access Claude.<br> - `openai-qwen-oauth`: Uses Qwen OAuth authentication. | `"gemini-cli-oauth"` |
 | `OPENAI_API_KEY`           | OpenAI API key when `MODEL_PROVIDER` is `openai-custom`. | `null` |
 | `OPENAI_BASE_URL`          | OpenAI API base URL when `MODEL_PROVIDER` is `openai-custom`. | `null` |
 | `CLAUDE_API_KEY`           | Claude API key when `MODEL_PROVIDER` is `claude-custom`. | `null` |
@@ -16,6 +16,7 @@ While `api-server.js` prioritizes reading configurations from command-line argum
 | `GEMINI_OAUTH_CREDS_FILE_PATH` | Path to the Gemini OAuth credentials JSON file when `MODEL_PROVIDER` is `gemini-cli-oauth`. | `null` |
 | `KIRO_OAUTH_CREDS_BASE64`  | Base64 string of Kiro OAuth credentials when `MODEL_PROVIDER` is `claude-kiro-oauth`. | `null` |
 | `KIRO_OAUTH_CREDS_FILE_PATH` | Path to the Kiro OAuth credentials JSON file when `MODEL_PROVIDER` is `claude-kiro-oauth`. | `null` |
+| `QWEN_OAUTH_CREDS_FILE_PATH` | Path to the Qwen OAuth credentials JSON file when `MODEL_PROVIDER` is `openai-qwen-oauth`. | `null` |
 | `PROJECT_ID`               | Google Cloud Project ID when `MODEL_PROVIDER` is `gemini-cli-oauth`. | `null` |
 | `SYSTEM_PROMPT_FILE_PATH`  | Path to the file containing system prompts. | `"input_system_prompt.txt"` |
 | `SYSTEM_PROMPT_MODE`       | System prompt processing mode: `overwrite` or `append`. | `"overwrite"` |
@@ -25,6 +26,7 @@ While `api-server.js` prioritizes reading configurations from command-line argum
 | `REQUEST_BASE_DELAY`       | Base delay time (in milliseconds) for API request retries, which increases exponentially with each retry. | `1000` |
 | `CRON_NEAR_MINUTES`        | The number of minutes before token expiration to trigger a refresh. | `5` |
 | `CRON_REFRESH_TOKEN`       | Whether to enable automatic token refresh. | `true` |
+| `PROVIDER_POOLS_FILE_PATH` | Path to the provider pools configuration file, used for managing load balancing and health checks for multiple provider instances. | `"provider_pools.json"` |
 
 **Example `config.json` (can be placed in the project root directory):**
 

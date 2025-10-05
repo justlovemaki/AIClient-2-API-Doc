@@ -42,3 +42,22 @@ POST http://localhost:3000/openai-custom/v1/chat/completions
 ```
 
 这将把 `openai-custom` 作为当前的模型提供商。这在需要快速切换后端模型提供商进行测试时非常有用。
+
+### 提供商池
+
+AIClient-2-API 支持提供商池功能，允许你配置多个提供商实例并进行负载均衡和健康检查。当配置了提供商池时，系统会从指定类型的提供商池中自动选择一个健康的实例来处理请求。
+
+要使用提供商池功能，需要在 `config.json` 中配置 `PROVIDER_POOLS_FILE_PATH` 指向你的提供商池配置文件：
+
+```json
+{
+  "PROVIDER_POOLS_FILE_PATH": "provider_pools.json",
+  "MODEL_PROVIDER": "openai-custom"  // 这将从 openai-custom 池中选择一个实例
+}
+```
+
+提供商池的主要优势包括：
+- **高可用性**: 当某个提供商实例不可用时，系统会自动切换到其他健康的实例
+- **负载均衡**: 在多个提供商实例之间分散请求，避免单个实例过载
+- **故障转移**: 自动检测并绕过有问题的提供商实例
+- **扩展性**: 可以轻松添加更多提供商实例来处理更多请求
